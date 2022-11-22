@@ -1,0 +1,83 @@
+
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  <!-- Main Content -->
+  <div class='container-fluid'>
+  <div class="row outerDiv">
+    <div class="col-xs-3 col-md-2 imageDiv d-none d-lg-block" >
+    </div>
+    <div class="col">
+  <main class="container" style="background-color: black;">
+    <div class="row">
+      <div class="col-md">
+      <!-- Home Page  --> 
+        <% if (title == "Home"){ %>
+
+          <a class="btn btn-primary" href="/register">New? Signup here!!</a>
+        <div class="container-fluid py-5">  
+
+              <!--project detail page-->    
+            <% } else if (title == "Projects"){%>
+              <h2 class="display-4 fw-bold">Project Details</h2>
+              <h3>TO DO</h3> 
+              <!-- Survey page-->
+            <% } else if (title == "Active Survey"){%>
+             <!-- login page--> 
+            <% } else if (title == "Login") {%>  
+              <h2 class="display-4 fw-bold">Project Details</h2>
+              <h3>TO DO</h3>
+            <% } %>
+        </div>
+      </div>
+
+    <!-- If you click the div, you are directed to survey list page. -->
+    <div class="container px-4">
+      <div class="row gx-5">
+        <div style="margin-bottom: 30px; cursor: pointer;" class="col" onclick="location.href='/survey-list';">
+          <div class="p-4 cl c1" >
+            <h3 class="pt-5"> SURVEY LIST</h3> <h1 style="text-align: center"><i class="fas fa-list"></i></h1>
+          </div>
+        </div>
+
+        
+        <!-- If you are logged-in, you are directed to survey list, but if you are not, 
+        you are directed to login page -->
+        
+        <% if(typeof userId=='string' && userId) {%>
+        <div  style="margin-bottom: 30px; cursor: pointer;" class="col" onclick ="location.href='/survey-list';">
+          <div class="p-4 cl c2">
+            <h3 class="pt-5"> TAKE SURVEY</h3><h1 style="text-align: right"><i class="fas fa-user-edit"></i></h1>
+          </div>
+        </div>
+        <% } else { %>
+        <div  style="margin-bottom: 30px; cursor: pointer; " class="col" onclick ="location.href='/login';">
+          <div class="p-4 cl c2">
+           
+            <h3 class="pt-5"> TAKE SURVEY</h3><h1 style="text-align: right"><i class="fas fa-user-edit"></i></h1>
+          </div>
+        </div> <% } %>
+        <div  style="margin-bottom: 30px; cursor: pointer;  "class="col">
+          <div class="p-4 cl c3">
+          
+            <h3 class="pt-5"> SHOW OUTCOME</h3><h1 style="text-align: right"><i class="fas fa-gift"></i></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  </div>
+  
+  </div>
+  </div>
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
+
+
+
+

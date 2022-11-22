@@ -1,0 +1,86 @@
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+      <img src="/Assets/images/RK.jpeg" height="120px"/>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+        <!-- <h1><font color="white">Welcome to COMP229 Group 6 Survey Web Application</font></h1> -->
+        
+        <% if (title == "Home"){ %>        
+          <li class="nav-item-s">
+            <a style="color: #f00505;" class="nav-link popup2" href="/home"><i class="fas fa-home"></i> Home </a>
+          </li>
+          <% } else  { %>
+          <li class="nav-item-s">        
+            <a class="nav-link popup2" style="color: rgb(255, 0, 0);" href="/home"><i class="fas fa-home"></i></i> Home </a>
+          </li>
+          <% } %>
+  
+          <% if (title == "About Us"){ %>        
+            <li class="nav-item-s">
+              <a style="color: #f90101;" class="nav-link popup2" href="/group"><i class="fas fa-users"></i></i> About Us </a>
+            </li>
+            <% } else  { %>
+            <li class="nav-item-s">        
+              <a class="nav-link popup2" style="color: rgb(230, 6, 6);" href="/group"><i class="fas fa-users"></i></i> About Us </a>
+            </li>
+            <% } %>
+  
+              <% if (title == "Surveys"){ %>        
+                  <li class="nav-item-s">
+                      <a style="color: #ff0000;" class="nav-link popup2" href="/survey-list" style=><i class="fas fa-poll"></i> Surveys </a>
+                  </li>
+              <% } else  { %>
+                  <li class="nav-item-s">        
+                    <a class="nav-link popup2" style="color: rgb(255, 0, 0);" href="/survey-list"><i class="fas fa-poll"></i> Surveys </a>
+                  </li>
+              <% } %>
+                        
+                  
+                  
+                 
+                  <% if(typeof userId=='string' && userId) {%>
+                  <% if (title == "My Surveys"){ %>
+                      <li class="nav-item-s">
+                        <a class="nav-link popup2" style="color: #e70a0a;" href="/mypage"><i class="fas fa-user"></i> My Surveys </a>
+                      </li>
+                    <% } else  { %>
+                    <li class="nav-item-s">
+                        <a class="nav-link popup2" style="color: rgb(230, 0, 0);" href="/mypage"><i class="fas fa-user"></i> My Surveys </a>
+                      </li>
+                    <% }%>
+                      <li class="nav-item-s">
+                        <a class="nav-link welcome" style="color: rgb(244, 0, 0);"> Welcome, <%= userId %></a>
+                      </li>
+                      <li class="nav-item-s">        
+                        <a class="nav-link popup2" style="color: #ff0000;" href="/logout"> Logout <i class="fas fa-lg fa-sign-out-alt"></i></a>                      
+                      </li>
+                      
+                  <% } else {%>
+                      <% if (title == "Login"){ %>        
+                        <li class="nav-item-s">
+                          <a style="color: #ff0000;" class="nav-link popup2" href="/login">
+                             Login <i class="fas fa-lg fa-sign-in-alt"></i></a>
+                        </li>
+                      <% } else  { %>
+                        <li class="nav-item-s">        
+                          <a class="nav-link popup2" style="color: rgb(255, 0, 0);" href="/login">
+                          Login <i class="fas fa-lg fa-sign-in-alt"></i></a>
+                        </li>
+                      <% } %>
+                      
+                      
+                  <% } %>
+                  
+                </ul>
+                </div>
+      
+    </div>
+  </nav>
+  
