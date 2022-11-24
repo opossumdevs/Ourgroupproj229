@@ -182,21 +182,21 @@ input[type="submit"]:hover {
 
 .cl {
 
-  height: 210px;
+  height: 120px;
   overflow: hidden;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .c1 {
-  background-color: #16be3a;
+  background-color: #6fc185;
 }
 
 .c2 {
-  background-color: #16be3a;
+  background-color: #405ee3ea;
 }
 
 .c3 {
-  background-color: #16be3a;
+  background-color: #6fc185;
 }
 
 .image {
