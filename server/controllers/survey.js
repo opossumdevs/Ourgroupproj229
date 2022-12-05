@@ -50,7 +50,7 @@ module.exports.processAddPage = (req, res, next) => {
     question.push(req.body.q3);
     question.push(req.body.q4);
     question.push(req.body.q5);
-
+//
     let newSurvey = Survey({
         "title": req.body.title,
         "type": req.body.surveytype,
