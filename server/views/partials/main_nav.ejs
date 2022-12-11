@@ -13,18 +13,18 @@
        
         
       
-            <a style="color: #6fc185;" class="nav-link popup2" href="/home">Home   </a>
+            <a style="color: #000000; font-size: 1.5vw ;" class="nav-link popup2" href="/home">Home &nbsp;  </a>
           </li>
        
   
                
             
-              <a style="color: #6fc185;" class="nav-link popup2" href="/group">  AboutUs </a>
+              <a style="color: #000000; font-size: 1.5vw ; " class="nav-link popup2" href="/group">  AboutUs &nbsp; </a>
             </li>
            
   
              
-                      <a style="color: #6fc185;" class="nav-link popup2" href="/survey-list" >Surveys </a>
+                      <a style="color: #000000;font-size: 1.5vw ; " class="nav-link popup2" href="/survey-list" >Surveys </a>
                   </li>
            
                         
@@ -34,29 +34,29 @@
                   <% if(typeof userId=='string' && userId) {%>
                   <% if (title == "My Surveys"){ %>
                       <li class="nav-item-s">
-                        <a class="nav-link popup2" style="color: #6fc185;" href="/mypage"><i class="fas fa-user"></i> My Surveys </a>
+                        <a class="nav-link popup2" style="color: #000000; font-size: 1.5vw ; " href="/mypage"><i class="fas fa-user"></i> My Surveys</a>
                       </li>
                     <% } else  { %>
                     <li class="nav-item-s">
-                        <a class="nav-link popup2" style="color: #6fc185;" href="/mypage"><i class="fas fa-user"></i> My Surveys </a>
+                        <a class="nav-link popup2" style="color: #000000; font-size: 1.5vw ; " href="/mypage"><i class="fas fa-user"></i> My Surveys  </a>
                       </li>
                     <% }%>
                       <li class="nav-item-s">
-                        <a class="nav-link welcome" style="color: #6fc185;"> Welcome, <%= userId %></a>
+                        <a class="nav-link welcome" style="color: #000000; font-size: 1.5vw ; "> Welcome, <%= userId %></a>
                       </li>
                       <li class="nav-item-s">        
-                        <a class="nav-link popup2" style="color: #6fc185;" href="/logout"> Logout <i class="fas fa-lg fa-sign-out-alt"></i></a>                      
+                        <a class="nav-link popup2" style="color: #000000; font-size: 1.5vw ; " href="/logout"> Logout<i class="fas fa-lg fa-sign-out-alt"></i></a>                      
                       </li>
                       
                   <% } else {%>
                       <% if (title == "Login"){ %>        
                         <li class="nav-item-s">
-                          <a style="color: #6fc185;" class="nav-link popup2" href="/login">
+                          <a style="color: #000000; font-size: 1.5vw ; " class="nav-link popup2" href="/login">
                              Login <i class="fas fa-lg fa-sign-in-alt"></i></a>
                         </li>
                       <% } else  { %>
                         <li class="nav-item-s">        
-                          <a class="nav-link popup2" style="color: #6fc185;" href="/login">
+                          <a class="nav-link popup2" style="color: #000000; font-size: 1.5vw ;  " href="/login">
                           Login <i class="fas fa-lg fa-sign-in-alt"></i></a>
                         </li>
                       <% } %>
