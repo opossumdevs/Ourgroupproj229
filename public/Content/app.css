@@ -136,7 +136,12 @@ input[type="submit"]:hover {
 
 
 .navbar {
-  background-color: #000000 !important;
+ 
+  background-image: url('https://static.coloringall.com/images/animals/mammals/possum/Cartoon-Baby-Possum.svg')
+  ;
+  background-size: 200px;
+  background-position-x: right;
+  background-repeat: no-repeat;
 }
 
 .navbar-brand {
@@ -163,7 +168,9 @@ input[type="submit"]:hover {
 }
 
 .container-fluid {
-  background-color: #ffffff !important;
+  background-image: url('https://i.pinimg.com/originals/f9/84/8e/f9848eb1f14f535073c6d2f1aa29bab6.png')
+  ;
+  background-size: 200px;
 }
 
 .fill {
